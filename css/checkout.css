@@ -4036,7 +4036,7 @@ body.dimmable > .dimmer {
   margin-left: auto;
   margin-right: auto;
 }
-@font-face {
+/* @font-face {
   font-family: DINN-Regular;
   font-style: normal;
   font-weight: 400;
@@ -4045,7 +4045,7 @@ body.dimmable > .dimmer {
     url(../DINNextLTArabic-Regular.woff2) format("woff2"),
     url(../fonts/DINNextLTArabic-Regular.woff) format("woff"),
     url(../fonts/DINNextLTArabic-Regular.ttf) format("truetype");
-}
+} */
 @font-face {
   font-family: DINN-Medium;
   font-style: normal;

